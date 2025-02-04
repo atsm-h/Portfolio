@@ -14,9 +14,9 @@ header {
     color: black;
     text-align: left;
     /* Center content inside the header */
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 0px;
+    padding: 16px 20px;
+    /* padding-left: 20px;
+    padding-right: 0px; */
     position: relative;
     /* Allows for positioning of the nav */
 }
@@ -31,7 +31,7 @@ header {
     position: absolute;
     font-size: 32px;
     font-weight: bold;
-    left: 80px;
+    left: 60px;
 }
 
 #logo a{
@@ -48,7 +48,7 @@ header {
 nav {
     position: absolute;
     /* Allows positioning of the nav */
-    right: 16px;
+    right: 20px;
     /* Adjust the distance from the right edge */
     top: 50%;
     /* Vertically center the nav */
@@ -71,9 +71,16 @@ header nav ul li a {
     font-size: 18px;
     background-color: #40434E;
     padding: 6px 8px;
+    border: 2px solid #40434E;
     border-radius: 5px;
     display: inline-block;
     /* width: 80px; */
+}
+
+header nav ul li a:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid #c297b8;
 }
 
 #subheader {
