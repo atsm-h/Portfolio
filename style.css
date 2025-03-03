@@ -173,24 +173,26 @@ footer p {
 
 /* ------------------------------- Services ------------------------------------- */
 
-.fit-image {
-    height: 240px;
-    width: 360px;
-}
-
-.flex-container-img {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+.grid-container-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
+
+.grid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+    
 
 .background-gray {
     background-color: #f2f2f2;
     padding: 20px;
 }
 
-/* ---------------------------------------------- Projects -------------------------------------------- */
+/* ------------------------------ Projects ------------------------------------------- */
 
 #projects h1 {
     margin: 20px 0 6px;
