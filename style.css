@@ -92,6 +92,7 @@ header nav ul li a:hover {
     header {
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
     header nav {
@@ -108,16 +109,16 @@ header nav ul li a:hover {
 
     header nav ul li {
         display: inline-block;
-        clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%, 10px 50%);
+        /* clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%, 10px 50%); */
         margin-right: -10px;
     }
 
     header nav ul li:first-child {
-        clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+        /* clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%); */
     }
 
     header nav ul li:last-child{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10px 50%);
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10px 50%); */
     }
 
     header nav ul li a {
@@ -149,7 +150,7 @@ main {
     margin: 10px 60px 20px;
 }
 
-p {
+h1, h2, h3, p {
     text-align: justify;
 }
 
@@ -299,3 +300,25 @@ footer p {
     justify-self: center;
 }
 
+
+/* ------------------------------- Mobile Projects ----------------------------------- */
+
+@media screen and (max-width: 800px) {
+    .project-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-item {
+        border-bottom: none;
+    }
+
+    .project-img{
+        border-bottom: 2px dashed #c297b8;
+        padding-bottom: 20px;
+    }
+
+    .project-img:last-child {
+        border-bottom: none;
+    }
+}
