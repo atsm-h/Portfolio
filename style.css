@@ -85,6 +85,64 @@ header nav ul li a:hover {
     border: 2px solid #c297b8;
 }
 
+
+/* ---------------------------- Mobile Header ----------------------------------*/
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        background-color: #40434E;
+        width: 100vw;
+    }
+
+    header nav ul {
+        display: inline-block;
+        background-color: white;
+        padding: 0px;
+        margin-left: 10px;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%, 10px 50%);
+        margin-right: -10px;
+    }
+
+    header nav ul li:first-child {
+        clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+    }
+
+    header nav ul li:last-child{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10px 50%);
+    }
+
+    header nav ul li a {
+        background-color: #40434E;
+        border: none;
+        border-radius: 0;
+        padding: 6px 14px;
+    }
+
+    header nav ul li a:hover {
+        color: white;
+        background-color: #40434E;
+        border: none;
+    }
+
+    .current-selection {
+        color: white;
+        background-color: #40434E;
+        text-decoration: underline;
+        border: none;
+        border-radius: 0;
+    }
+    
+}
+
 /*------------------------------ Main ------------------------------------------ */
 
 main {
@@ -113,6 +171,17 @@ p {
     background: url(assets/pedro-miranda-3QzMBrvCeyQ-unsplash\ \(2\).jpg) no-repeat;
     background-size: cover;
     background-position: center right;
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        width: 100%;
+    }
+
+    .content::after {
+        display: none;
+    }
+    
 }
 
 .subheader {
