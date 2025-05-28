@@ -27,3 +27,25 @@
 .bg-custom-tertiary{
     background-color: var(--tertiary-color);
 }
+
+.border-custom-primary{
+    border-color: var(--primary-color);
+}
+
+.border-custom-secondary{
+    border-color: var(--secondary-color);
+}
+
+.border-custom-tertiary{
+    border-color: var(--tertiary-color);
+}
+
+.border-dashed{
+    border-style: dashed;
+}
+
+.border-custom-bottom{
+    border-top-style: none !important;
+    border-right-style: none !important;
+    border-left-style: none !important;
+}
