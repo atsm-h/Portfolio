@@ -9,6 +9,27 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (min-width: 992px) {
+            #cssgrid {
+                display: grid; 
+                grid-template-columns: 7fr 5fr;
+            }
+            #cssgrid h1 {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            #second {
+                grid-column: 2;
+                grid-row: 1 / 3;
+            }
+            #third {
+                grid-column: 1;
+                grid-row: 2;
+            }
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -47,41 +68,43 @@
 
     <main>
         <section class="container">
-            <div class="row">
-                <div class="col-md-7">
+            <div id="cssgrid">
+                <!-- <div class="col-lg-7"> -->
                     <h1>
                         EMPOWERING CONNECTIONS, <br> <span class="text-custom-primary">ILLUMINATING SOLUTIONS!</span>
                     </h1>
-                    <h4>Welcome to Next.In - Powering Your Vision with Expertise</h4>
-
-                    <p>At Next.in, we specialize in delivering top-tier electrical consulting services for Residential,
-                        Commercial, and Industrial projects. With a commitment to precision and innovation, we provide
-                        expert
-                        solutions that ensure safety, efficiency, and compliance with the highest industry standards.
-                    </p>
-                    <p>Our services include project BOQs and budgeting, comprehensive electrical audits, test reports,
-                        and detailed
-                        inspections, all designed to optimize your electrical systems. Whether you're planning a new
-                        project or
-                        upgrading an existing one, our team is here to guide you with tailored solutions that meet your
-                        unique
-                        requirements.</p>
-
-                    <p>At Next.in, we don't just consult—we empower. Let us help you build a future that's safe,
-                        reliable, and
-                        energy-efficient.</p>
-                    <div class="row">
-                        <span class="col-3"><span class="text-custom-primary fs-2 fw-bold">10+</span><br>Years of
-                            Experience</span>
-                        <span class="col-3"><span class="text-custom-primary fs-2 fw-bold">20+</span><br>Major
-                            projects</span>
+                    <div id="second" class="mt-4 mb-2 my-lg-0">
+                        <img class="rounded shadow"
+                            src="assets/small-vecteezy_business-team-hands-at-work-with-business-plan_1236463_small.jpg"
+                            alt="Working on Plan" style="object-fit: cover;width: 100%;height: 100%;">
                     </div>
-                </div>
-                <div class="col-md-5">
-                    <img class="rounded shadow"
-                        src="assets/small-vecteezy_business-team-hands-at-work-with-business-plan_1236463_small.jpg"
-                        alt="Working on Plan" style="object-fit: cover;width: 100%;height: 100%;">
-                </div>
+                    <div id="third">
+                        <h5>Welcome to Next.In - Powering Your Vision with Expertise</h5>
+                    
+                        <p>At Next.in, we specialize in delivering top-tier electrical consulting services for Residential,
+                            Commercial, and Industrial projects. With a commitment to precision and innovation, we provide
+                            expert
+                            solutions that ensure safety, efficiency, and compliance with the highest industry standards.
+                        </p>
+                        <p>Our services include project BOQs and budgeting, comprehensive electrical audits, test reports,
+                            and detailed
+                            inspections, all designed to optimize your electrical systems. Whether you're planning a new
+                            project or
+                            upgrading an existing one, our team is here to guide you with tailored solutions that meet your
+                            unique
+                            requirements.</p>
+                    
+                        <p>At Next.in, we don't just consult—we empower. Let us help you build a future that's safe,
+                            reliable, and
+                            energy-efficient.</p>
+                        <div class="row text-center text-lg-start">
+                            <span class="col-6 col-lg-3"><span class="text-custom-primary fs-2 fw-bold">10+</span><br>Years of
+                                Experience</span>
+                            <span class="col-6 col-lg-3"><span class="text-custom-primary fs-2 fw-bold">20+</span><br>Major
+                                projects</span>
+                        </div>
+                    </div>
+                <!-- </div> -->
             </div>
         </section>
     </main>
