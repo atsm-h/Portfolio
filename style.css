@@ -1,43 +1,43 @@
 :root{
-    --primary-color: #DE89BE;
-    --secondary-color: #C297b8;
-    --tertiary-color: #40434E;
+    --primary-custom-color: #DE89BE;
+    --secondary-custom-color: #C297b8;
+    --tertiary-custom-color: #40434E;
 }
 
 .text-custom-primary{
-    color: var(--primary-color);
+    color: var(--primary-custom-color);
 }
 
 .text-custom-secondary{
-    color: var(--secondary-color);
+    color: var(--secondary-custom-color);
 }
 
 .text-custom-tertiary{
-    color: var(--tertiary-color);
+    color: var(--tertiary-custom-color);
 }
 
 .bg-custom-primary{
-    background-color: var(--primary-color);
+    background-color: var(--primary-custom-color);
 }
 
 .bg-custom-secondary{
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-custom-color);
 }
 
 .bg-custom-tertiary{
-    background-color: var(--tertiary-color);
+    background-color: var(--tertiary-custom-color);
 }
 
 .border-custom-primary{
-    border-color: var(--primary-color);
+    border-color: var(--primary-custom-color);
 }
 
 .border-custom-secondary{
-    border-color: var(--secondary-color);
+    border-color: var(--secondary-custom-color);
 }
 
 .border-custom-tertiary{
-    border-color: var(--tertiary-color);
+    border-color: var(--tertiary-custom-color);
 }
 
 .border-dashed{
